@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav() {
   return (
-    <div className="navbar bg-neutral text-neutral-content">
+    <div className="navbar bg-neutral text-neutral-content headerBg">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,8 +38,8 @@ function Nav() {
     </ul> */}
   </div>
   <div className="navbar-end">
-    <a className="btn" m-13>Register</a>
-    <a className="btn">Log In</a>
+    <a className="btn navBtn">Register</a>
+    <a className="btn navBtn">Log In</a>
   </div>
 </div>
   )
