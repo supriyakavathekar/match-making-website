@@ -1,8 +1,12 @@
 import React from 'react'
+import Nav from '../components/Nav'
 
 function ProfilePage() {
   return (
-    <div>ProfilePage</div>
+    <>
+<Nav/>
+
+</>
   )
 }
 
