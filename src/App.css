@@ -6,7 +6,7 @@
 
 .mainText {
     font-family: 'Kablammo', cursive;
-    font-size: 50px;
+    font-size: 40px;
     color: crimson;
 }
 
@@ -27,6 +27,61 @@
 
 .homePara {
     color: blue;
+    
+}
+.loginBtn{
+    padding: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    width: 80px;
+    font-family: Calibri, Helvetica, sans-serif;  
+}
+
+.email{   
+    width: 100%;   
+    margin: 10px;  
+    padding: 5px 5px;   
+    display: inline-block;   
+    border: 2px solid crimson;
+    box-sizing: border-box;   
+    border-radius: 20px;
+    font-family: Calibri, Helvetica, sans-serif;  
+}  
+
+
+
+.password{
+    width: 100%;   
+    margin: 10px;  
+    padding: 5px 5px;   
+    display: inline-block;   
+    border: 2px solid crimson;
+    border-radius: 20px;
+    box-sizing: border-box; 
+    font-family: Calibri, Helvetica, sans-serif;  
+}
+
+.userPassword{
+    font-family: Calibri, Helvetica, sans-serif;   
+}
+
+.register{
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kablammo', cursive;
+font-family: 'Teko', sans-serif;
+font-weight: bold;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+.mainText {
+   
+    font-size: 80px;
     
 }
 

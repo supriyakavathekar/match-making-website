@@ -40,7 +40,28 @@ function Nav() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">log in</a>
+    {/* <a className="btn">log in</a> */}
+
+  
+<button className="btn" onClick={()=>window.my_modal_3.showModal()}>Log in</button>
+<dialog id="my_modal_3" className="modal">
+  <form method="dialog" className="modal-box">
+    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    <div className='container'>
+      <h1 className='register memberLogin'>Member Login Form</h1>
+       <label className='userPassword'> Username: </label>
+       <input className='email' type="email" name="email" placeholder='Type your E-mail' />
+       <label className='userPassword'>Password: </label>
+       <input className='password' type="password" name="password" placeholder='Type your Password' required />
+       <button className='loginBtn' type='submit'>Login</button>
+       <p className='register'>Not Joined Perfect Pair Co. yet? </p>
+       <a href="" className='register'>Register now free of charge</a>
+       
+    </div>
+      
+     
+  </form>
+</dialog>
   </div>
 </div>
   
