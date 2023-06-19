@@ -1,8 +1,11 @@
 import React from 'react'
 
+
 function Home() {
   return (
    <>
+
+
      <div className="hero min-h-screen bg-base-200 mainBg">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="https://images.unsplash.com/photo-1509873889234-3cdbfe2e6740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" className="max-w-full" />

@@ -1,21 +1,37 @@
 
+import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import {Routes, Route} from 'react-router-dom'
-
+import data from './data.json'
+import Profile from './components/Profile';
 
 function App() {
+
+
+
+  const [user, setuser] = useState()
+
+
   return (
-    <div className="app min-h-screen ">
-      
-    <Nav/>
     
-    <Home/>
+    <div className="app min-h-screen ">
+     <Nav user= {user} setuser={setuser} data={data}/>
+     <Routes>
+    
+   
+    <Route path='/' element={<Home/>} />
   
-    <Footer/>
+    <Route path='/profile' element={<Profile user={user}/>}/>
+    <Route path='/footer' element={<Footer/>}/>
+    
+     
+    </Routes>
+    
     </div>
+   
   );
 }
 

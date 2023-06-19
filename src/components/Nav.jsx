@@ -1,6 +1,35 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-function Nav() {
+
+function Nav({user ,setuser, data}) {
+
+  const navigate = useNavigate()
+
+  const submithandler = (e) =>{
+    e.preventDefault()
+    // console.log(e.target.email.value);
+    // console.log(e.target.password.value);
+    const personEmail = e.target.email.value
+    const password = e.target.password.value
+    const person = data.users.find(i => i.email == personEmail)
+
+    if (person) {
+      console.log("person found");
+      if (person.password==password) {
+        console.log("you can logn");
+        setuser(person)
+       navigate('/profile')
+      }else{
+        console.log("you can not login");
+      }
+    } else{
+      console.log("peron not found");
+    }
+
+
+  }
+  // console.log(data);
   return (
   <>
   
@@ -45,8 +74,9 @@ function Nav() {
   
 <button className="btn" onClick={()=>window.my_modal_3.showModal()}>Log in</button>
 <dialog id="my_modal_3" className="modal">
-  <form method="dialog" className="modal-box">
-    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+
+  <form onSubmit={submithandler} method="dialog" className="modal-box">
+    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={()=>window.my_modal_3.close()}>✕</button>
     <div className='container'>
       <h1 className='register memberLogin'>Member Login Form</h1>
        <label className='userPassword'> Username: </label>
