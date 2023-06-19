@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function Nav({user ,setuser, data}) {
@@ -85,7 +85,9 @@ function Nav({user ,setuser, data}) {
        <input className='password' type="password" name="password" placeholder='Type your Password' required />
        <button className='loginBtn' type='submit'>Login</button>
        <p className='register'>Not Joined Perfect Pair Co. yet? </p>
-       <a href="" className='register'>Register now free of charge</a>
+       {/* <a  className='register'>Register now free of charge</a> */}
+       <Link to='/register' className='register' >Register now free of charge</Link>
+       
        
     </div>
       
