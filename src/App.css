@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+
+
+
+.mainText {
+    font-family: 'Kablammo', cursive;
+    font-size: 50px;
+    color: crimson;
+}
+
+.slogan {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 22px;
+    color: crimson;
+}
+
+.navbar {
+    background-color: crimson;
+}
+
+.footer{
+    background-color: crimson;
+}
+
+.homePara {
+    color: blue;
+    
+}
+
+
+
+
+
+
+
+

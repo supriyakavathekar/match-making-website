@@ -4,31 +4,3 @@
 
 
 
-
-.footerBg {
-    background-color: #f78888;
-    color: rgb(54, 50, 50);
-}
-
-.headerBg{
-    background-color: #f78888;
-    color: rgb(54, 50, 50);
-   
-}
-
-.navBtn {
-background-color: #f3D250;
-border: #f3D250;
-width: 80px;
-
-
-&:hover{
-   background-color: #5DA2D5 ;
-   color: #f3D250;
-}
-}
-
-.navbar-end{
-    height: 60px;
-}
-

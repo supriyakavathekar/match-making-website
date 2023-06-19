@@ -8,8 +8,7 @@ function Footer() {
     <p className="font-bold">
       Perfect Pair Co. <br/>
     </p> 
-    <p>We believe choosing a life partner is a big and important decision, and hence work towards giving a simple and secure matchmaking experience for you and your family.</p>
-    <p>We offer over a variety of search options to suit your every need. The searches are based on Religion, Mother Tongue(community), Country, State of Residence, Profession, Keywords etc. </p>
+   
     <p>Copyright © 2023 - All right reserved</p>
   </div> 
   <div>
