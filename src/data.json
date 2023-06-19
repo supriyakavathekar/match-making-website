@@ -1,0 +1,354 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fullName": "Akshay Kale",
+            "age": "28",
+            "height": "180",
+            "occupation": "Doctor",
+            "country": "Germany",
+            "gender": "male",
+            "about": " belong to a well-mannered middle-class family and strongly believe in Hindu culture, rituals & holds an open-minded personality. I'm a pure vegetarian and never not drank or smoked. I'm Affectionate, kind-hearted, Caring, Happy & belives in Hard Working and creativity. My hobbies are Reading, Dancing, Watch Online Documentaries and Learn New Things.",
+            "religion": "Hindu",
+            "city": "Munich",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/akshay.jpeg?updatedAt=1686826426501"],
+            "email": "akshay@gmail.com",
+            "password": "abcd",
+            "idCard": "fdsakl5q34",
+            "nationality": "Indian"
+        },
+        {
+            "id": 2,
+            "fullName": "John Smith",
+            "age": "33",
+            "height": "170",
+            "occupation": "Software Developer",
+            "country": "Germany",
+            "gender": "male",
+            "about": " I'd describe myself as someone who's reliable, trendy, smart and someone who always has a smile on the face. I am a big Nature & Animal lover. I have lived in different parts of World and appreciate all cultures & customs. Looking forward to exploring more with someone of my age. I have always enjoyed and loved the company of my parents.",
+            "religion": "christian",
+            "city": "Berlin",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/John.jpeg?updatedAt=1686826464318"],
+            "email": "john@gmail.com",
+            "password": "abcd",
+            "idCard": "hjkdhkjk",
+            "nationality": "German"
+        },
+        {
+            "id": 3,
+            "fullName": "Adam",
+            "age": "32",
+            "height": "190",
+            "occupation": "UX Designer",
+            "country": "Germany",
+            "gender": "male",
+            "about": " I'm an easy-going, god-fearing, caring, polite, understanding, reliable, and kind-hearted human being. I consider within the motto 'Live and let live'. I hate liars. I'm fun-loving, down earth, and really a lot Optimist. I like touring, sightseeing, listening to rock music, studying all the most recent fiction novels..",
+            "religion": "Islam",
+            "city": "Stuttgart",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Adam.webp?updatedAt=1686826464418"],
+            "email": "adam@gmail.com",
+            "password": "abcd",
+            "idCard": "hfkjhdkksd",
+            "nationality": "German"
+        },
+        {
+            "id": 4,
+            "fullName": "Rohit Sharma",
+            "age": "30",
+            "height": "190",
+            "occupation": "Real estate agent",
+            "country": "India",
+            "gender": "male",
+            "about": " i m mature, candid, and have integrity, a warmth, caring, loving, & dependable specific particular person. I share a very specific bond with all my mates & family. I like to carry secrets and techniques and strategies & the entire people round me confide their points to me. I like to help people in seeking out choices for his or her points & moreover do loads of social service at NGOs as I've achieved my grasp in Social analysis. My strengths are hard-working, self-motivating, and dedicated to my work. I like watching worldwide info channels and browse newspapers. I additionally like consuming seafood and trying out my hand in making a couple of of my favourite preparations at residence as soon as I get a possibility.",
+            "religion": "Hindu",
+            "city": "Mumbai",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Rohit.jpg?updatedAt=1686826464342"],
+            "email": "rohit@gmail.com",
+            "password": "abcd",
+            "idCard": "fkhskjhkj",
+            "nationality": "Indian"
+        },
+        {
+            "id": 5,
+            "fullName": "Tarun mishra",
+            "age": "27",
+            "height": "178",
+            "occupation": "Dentist",
+            "country": "Germany",
+            "gender": "male",
+            "about": " I'd describe myself as someone who's reliable, nice, intelligent, hardworking, trendy, and spectacular. I have terrific humorousness and have a smiling face. I'm an easy-going specific particular person & don’t get merely disturbed by downs in my life. I'm a specific particular person & have a library of the proper spiritual books. I moreover have the benefit of touring, watching movement footage, going out for dinner, and having good psychological conversations.",
+            "religion": "Hindu",
+            "city": "Munich",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Tarun.png?updatedAt=1686826468230"],
+            "email": "tarun@email.com",
+            "password": "abcd",
+            "idCard": "hkhflajli",
+            "nationality": "Indian"
+        },
+        {
+            "id": 6,
+            "fullName": "advait pate",
+            "age": "33",
+            "height": "160",
+            "occupation": "Test Manager",
+            "country": "Germany",
+            "gender": "male",
+            "about": " I come from a middle-class family. c I'm an easy-going, sincere,  caring person with a strong work ethic. I'm a modern thinker and follow good values given by our ancestors. I like Painting, love traveling with friends, writing, listening to classical music & watching the latest movies.",
+            "religion": "christian",
+            "city": "Dresden",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Advait.avif?updatedAt=1686826464478"],
+            "email": "advait@email.com",
+            "password": "abcd",
+            "idCard": "ljlsdjfsjf;",
+            "nationality": "Indian"
+        },
+        {
+            "id": 7,
+            "fullName": "Pooja trivedi",
+            "age": "27",
+            "height": "160",
+            "occupation": "Frontend Developer",
+            "country": "Germany",
+            "gender": "female",
+            "about": " I'd describe myself as someone who's reliable, trendy, smart and someone who always has a smile on the face. I am a big Nature & Animal lover. I have lived in different parts of World and appreciate all cultures & customs.  Looking forward to exploring more with someone of my age. I'm an easy-going, sincere,  caring person with a strong work ethic",
+            "religion": "Hindu",
+            "city": "Munich",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Pooja.png?updatedAt=1686826464595"],
+            "email": "pooja@email.com",
+            "password": "abcd",
+            "idCard": "fkjhfflkjflkj",
+            "nationality": "Indian"
+        },
+        {
+            "id": 8,
+            "fullName": "Smita thite",
+            "age": "29",
+            "height": "180",
+            "occupation": "Dance Teacher",
+            "country": "India",
+            "gender": "female",
+            "about": " I'd describe myself as someone who's reliable, trendy, smart and someone who always has a smile on the face. I am a big Nature & Animal lover. I have lived in different parts of World and appreciate all cultures & customs. Looking forward to exploring more with someone of my age. I have always enjoyed and loved the company of my parents.",
+            "religion": "christian",
+            "city": "Pune",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Smita.png?updatedAt=1686826464635"],
+            "email": "smita@email.com",
+            "password": "abcd",
+            "idCard": "klsjfsjfl",
+            "nationality": "Indian"
+        },
+        {
+            "id": 9,
+            "fullName": "Neha deshpande",
+            "age": "28",
+            "height": "180",
+            "occupation": "UX Designer",
+            "country": "Germany",
+            "gender": "female",
+            "about": "  belong to a well-mannered middle-class family and strongly believe in Hindu culture, rituals & holds an open-minded personality. I'm a pure vegetarian and never not drank or smoked. I'm Affectionate, kind-hearted, Caring, Happy & belives in Hard Working and creativity. My hobbies are Reading, Dancing, Watch Online Documentaries and Learn New Things.",
+            "religion": "Hindu",
+            "city": "Munich",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Neha.png?updatedAt=1686826464656"],
+            "email": "neha@email.com",
+            "password": "abcd",
+            "idCard": "khglsjljdf",
+            "nationality": "Indian"
+        },
+        {
+            "id": 10,
+            "fullName": "Fatima",
+            "age": "28",
+            "height": "170",
+            "occupation": "Teacher",
+            "country": "Germany",
+            "gender": "female",
+            "about": "  m fun-loving, down earth, and really a lot Optimist. I like touring, sightseeing, listening to rock music, studying all the most recent fiction novels.",
+            "religion": "Islam",
+            "city": "Berlin",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/fatima.jpg?updatedAt=1686826464149"],
+            "email": "fatima@gmail.com",
+            "password": "abcd",
+            "idCard": "ksdsnfksdkf.sm",
+            "nationality": "Indian"
+        },
+        {
+            "id": 11,
+            "fullName": "Jessica thomas",
+            "age": "34",
+            "height": "180",
+            "occupation": "Photographer",
+            "country": "Germany",
+            "gender": "female",
+            "about": "  m fun-loving, down earth, and really a lot Optimist. I like touring, sightseeing, listening to rock music, studying all the most recent fiction novels.",
+            "religion": "Cathelic",
+            "city": "Stuttgart",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Jessica.png?updatedAt=1686826464450"],
+            "email": "jessica@gmail.com",
+            "password": "abcd",
+            "idCard": "jfldl;kfsm",
+            "nationality": "German"
+        },
+        {
+            "id": 12,
+            "fullName": "Aneri apte",
+            "age": "25",
+            "height": "160",
+            "occupation": "Accountatnt",
+            "country": "Germany",
+            "gender": "female",
+            "about": " I'd describe myself as someone who's reliable, trendy, smart and someone who always has a smile on the face. I am a big Nature & Animal lover. I have lived in different parts of World and appreciate all cultures & customs. Looking forward to exploring more with someone of my age. I have always enjoyed and loved the company of my parents.",
+            "religion": "Hindu",
+            "city": "Frankfurt",
+            "pics": ["https://ik.imagekit.io/lp7vvaw9o/Matrimony/Aneri.png?updatedAt=1686826464518"],
+            "email": "aneri@email.com",
+            "password": "abcd",
+            "idCard": "fgkfhkdhf",
+            "nationality": "Indian"
+        }
+    ],
+    
+    "gender": [
+        "male", "female"
+    ],
+    "religion": [
+        "Hindu", "Christian", "Islam", "Jain" , "Cathelic"
+    ],
+    "countries": [
+        "Germany", "India"
+    ],
+    "messages": [
+        {
+            "id": 1,
+            "from": 1,
+            "to": 7,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 2,
+            "from": 7,
+            "to": 1,
+            "body": "I think we wont be a good pair"
+        },
+        {
+            "id": 3,
+            "from": 2,
+            "to": 12,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 4,
+            "from": 11,
+            "to": 6,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 5,
+            "from": 8,
+            "to": 4,
+            "body": "I think we wont be a good pair"
+        },
+        {
+            "id": 6,
+            "from": 3,
+            "to": 7,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 7,
+            "from": 10,
+            "to": 6,
+            "body": "I think we wont be a good pair"
+        },
+        {
+            "id": 8,
+            "from": 2,
+            "to": 8,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 9,
+            "from": 1,
+            "to": 11,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 10,
+            "from": 9,
+            "to": 5,
+            "body": "I think we wont be a good pair"
+        },
+        {
+            "id": 11,
+            "from": 5,
+            "to": 8,
+            "body": "I think you your nice"
+        },
+        {
+            "id": 12,
+            "from": 11,
+            "to": 1,
+            "body": "I think you your nice"
+        }
+    ],
+    "matches": [
+        {
+            "id": 1,
+            "from": 1,
+            "to": 2
+        },
+        {
+            "id": 2,
+            "from": 7,
+            "to": 1
+            
+        },
+        {
+            "id": 3,
+            "from": 2,
+            "to": 12
+        },
+        {
+            "id": 4,
+            "from": 11,
+            "to": 6
+        },
+        {
+            "id": 5,
+            "from": 8,
+            "to": 4
+        },
+        {
+            "id": 6,
+            "from": 3,
+            "to": 7
+        },
+        {
+            "id": 7,
+            "from": 10,
+            "to": 6
+        },
+        {
+            "id": 8,
+            "from": 2,
+            "to": 8
+        },
+        {
+            "id": 9,
+            "from": 1,
+            "to": 11
+        },
+        {
+            "id": 10,
+            "from": 9,
+            "to": 5
+        },
+        {
+            "id": 11,
+            "from": 5,
+            "to": 8
+        },
+        {
+            "id": 12,
+            "from": 11,
+            "to": 1}
+    ]
+}

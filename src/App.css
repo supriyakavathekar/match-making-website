@@ -29,6 +29,8 @@
     color: blue;
     
 }
+
+/* login page */
 .loginBtn{
     padding: 5px;
     border: 1px solid black;
@@ -51,8 +53,6 @@
     border-radius: 20px;
     font-family: Calibri, Helvetica, sans-serif;  
 }  
-
-
 
 .password{
     width: 100%;   
@@ -85,7 +85,20 @@ font-weight: bold;
     
 }
 
+/* login page */
 
+
+
+
+
+
+.userPassword{
+    font-family: Calibri, Helvetica, sans-serif;   
+}
+
+.register{
+font-size: 20px;
+}
 
 
 
