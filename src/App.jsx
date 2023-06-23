@@ -21,16 +21,12 @@ function App() {
     <div className="app min-h-screen ">
      <Nav user= {user} setuser={setuser} data={data}/>
      <Routes>
-    
-   
     <Route path='/' element={<Home/>} />
-  
     <Route path='/profile' element={<Profile user={user}/>}/>
     <Route path='/register' element={<Register/>} />
-    <Route path='/footer' element={<Footer/>}/>
-    
-     
+  
     </Routes>
+    <Footer/>
     
     </div>
    
