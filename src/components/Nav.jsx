@@ -55,7 +55,7 @@ function Nav({user ,setuser, data}) {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
+      <li><Link to={'/profile'} >Home</Link></li>
       <li tabIndex={0}>
         <details>
           <summary>Profile</summary>
@@ -65,7 +65,8 @@ function Nav({user ,setuser, data}) {
           </ul> */}
         </details>
       </li>
-      <li><a>My Match</a></li>
+      <li><Link to={'/match'} >My Match</Link></li>
+      
     </ul>
   </div>
   <div className="navbar-end">

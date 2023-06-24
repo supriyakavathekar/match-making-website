@@ -9,6 +9,7 @@ import data from './data.json'
 import Profile from './components/Profile';
 import Register from './components/Register';
 import Match from './components/Match';
+import Detail from './components/Detail';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
     <Route path='/profile' element={<Profile user={user}/>}/>
     <Route path='/register' element={<Register/>} />
     <Route path='/match' element={<Match/>} />
+    <Route path='/detail' element={<Detail/>}/>
     
   
     </Routes>
