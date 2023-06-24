@@ -3,7 +3,7 @@ import React from 'react'
 function Match() {
   return (
     <div>
-    <div className="overflow-x-auto">
+    <div className=" min-h-screen  overflow-x-auto">
 <table className="table">
 {/* head */}
 <thead>

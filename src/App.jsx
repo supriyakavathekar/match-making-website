@@ -10,6 +10,7 @@ import Profile from './components/Profile';
 import Register from './components/Register';
 import Match from './components/Match';
 import Detail from './components/Detail';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
     <Route path='/register' element={<Register/>} />
     <Route path='/match' element={<Match/>} />
     <Route path='/detail' element={<Detail/>}/>
+    <Route path='/contact' element={<Contact/>} />
     
   
     </Routes>
