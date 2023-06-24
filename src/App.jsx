@@ -8,6 +8,7 @@ import {Routes, Route} from 'react-router-dom'
 import data from './data.json'
 import Profile from './components/Profile';
 import Register from './components/Register';
+import Match from './components/Match';
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
     <Route path='/' element={<Home/>} />
     <Route path='/profile' element={<Profile user={user}/>}/>
     <Route path='/register' element={<Register/>} />
+    <Route path='/match' element={<Match/>} />
+    
   
     </Routes>
     <Footer/>

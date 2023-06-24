@@ -16,7 +16,7 @@ function Profile({user, data}) {
   return (
     <>
     <div className='min-h-screen ' >
-        <h1>Welcome to our website {user.fullName} </h1>
+        <h1>Welcome to our website </h1>
 
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
   <figure><img className="max-w-xs" src="" alt="Shoes" /></figure>
@@ -24,7 +24,7 @@ function Profile({user, data}) {
     <h2 className="card-title">John Smith</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Details</button>
     </div>
   </div>
 </div>
@@ -35,7 +35,7 @@ function Profile({user, data}) {
     <h2 className="card-title">Adam</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Details</button>
     </div>
   </div>
 </div>
@@ -46,7 +46,7 @@ function Profile({user, data}) {
     <h2 className="card-title">Rohit Sharma</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Details</button>
     </div>
   </div>
 </div>
@@ -57,7 +57,7 @@ function Profile({user, data}) {
     <h2 className="card-title">Tarun mishra</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Detailsw</button>
     </div>
   </div>
 </div>
@@ -68,7 +68,7 @@ function Profile({user, data}) {
     <h2 className="card-title">advait pate</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Details</button>
     </div>
   </div>
 </div>
@@ -79,7 +79,7 @@ function Profile({user, data}) {
     <h2 className="card-title">Pooja trivedi</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Details</button>
     </div>
   </div>
 </div>
