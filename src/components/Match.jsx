@@ -1,8 +1,14 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect } from 'react'
 
-function Match() {
+function Match({user, matches, setMatches}) {
+
+  useEffect(() => {
+    axios(`https://matchmaking-4wh6.onrender.com/matches/?from=${user.id}`).then(i => setMatches(i.data)).catch(i => console.log(i))
+  }, [])
   return (
     <div>
+      {matches && matches.length}
     <div className=" min-h-screen  overflow-x-auto">
 <table className="table">
 {/* head */}

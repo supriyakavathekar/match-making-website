@@ -12,6 +12,7 @@ import Match from './components/Match';
 import Detail from './components/Detail';
 import Contact from './components/Contact';
 import axios from 'axios';
+import Stories from './components/Stories';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
 // selecct user and check
 const [users, setUsers] = useState()
   const [user, setuser] = useState()
+  const [matches, setMatches] = useState()
+  const [selectedUser, setselectedUser] = useState()
 
   useEffect(() => {
     axios("https://matchmaking-4wh6.onrender.com/users").then(i => setUsers(i.data)).catch(i => console.log(i))
@@ -31,14 +34,15 @@ const [users, setUsers] = useState()
   return (
     
     <div className="app min-h-screen ">
-     <Nav user= {user} users={users} setuser={setuser} data={data}/>
+     <Nav user= {user} users={users}  setuser={setuser} data={data}/>
      <Routes>
     <Route path='/' element={<Home/>} />
-    <Route path='/profile' element={<Profile user={user} data={data}/>}/>
+    <Route path='/profile' element={<Profile user={user} users={users} data={data} setselectedUser={setselectedUser} />}/>
     <Route path='/register' element={<Register/>} />
-    <Route path='/match' element={<Match/>} />
-    <Route path='/detail' element={<Detail user={user} setuser={setuser} data={data}/>}/>
+    <Route path='/match' element={<Match setMatches={setMatches} matches={matches} user={user}/>} />
+    <Route path='/detail' element={<Detail user={user} setuser={setuser} data={data} users={users} setselectedUser={setselectedUser}/>}/>
     <Route path='/contact' element={<Contact/>} />
+    <Route path='/stories' element={<Stories/>} />
     
   
     </Routes>

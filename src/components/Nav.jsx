@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 
-function Nav({user ,setuser, data, users}) {
+function Nav({user ,setuser, data, users, setMatches}) {
 
   const navigate = useNavigate()
 
@@ -19,6 +19,7 @@ function Nav({user ,setuser, data, users}) {
       if (person.password==password) {
         console.log("you can logn");
         setuser(person)
+        
         window.my_modal_3.close()
        navigate('/profile')
       }else{
@@ -57,16 +58,17 @@ function Nav({user ,setuser, data, users}) {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       <li><Link to={'/profile'} >Home</Link></li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Profile</summary>
+      {/* <li tabIndex={0}> */}
+        {/* <details> */}
+          {/* <summary>Stories</summary> */}
           {/* <ul className="p-2">
             <li><a>Submenu 1</a></li>
             <li><a>Submenu 2</a></li>
           </ul> */}
-        </details>
-      </li>
+        {/* </details>
+      </li> */}
       <li><Link to={'/match'} >My Match</Link></li>
+      <li><Link to={'/stories'} >Stories</Link></li>
       
     </ul>
   </div>

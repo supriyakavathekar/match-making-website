@@ -1,96 +1,50 @@
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Profile({user, data}) {
-
-    const navigate = useNavigate()
-    useEffect(()=>{
-      if (!user) {
-        navigate('/')
-      }
-  
-  
-
-   },[])
+function Profile({ user, data, users,  }) {
+  const [available, setAvailable] = useState()
+  const navigate = useNavigate();
+  useEffect(() => {
+    const result = users.filter(i => i.gender != user.gender)
+    setAvailable(result)
+    if (!user) {
+      navigate("/");
+    }
+  }, []);
 
   return (
     <>
-    <div className='min-h-screen ' >
-        <h1>Welcome to our website </h1>
 
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img className="max-w-xs" src="" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">John Smith</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Details</button>
-    </div>
-  </div>
-</div>
+<h1>Welcome to our website </h1>
+      <div className="min-h-screen lg:flex flex-wrap gap-10">
+      
+        {available && available.map(i => <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <figure className="w-90 h-72">
+            <img className="max-w-xs" src={i.pics[0]} alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">{i.fullName}</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary" onClick={(i)=>{
+                setAvailable(i.id)
+                navigate('/detail')
+              }} >Details</button>
+            </div>
+          </div>
+        </div>)}
 
-<div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Adam</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Details</button>
-    </div>
-  </div>
-</div>
 
-<div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Rohit Sharma</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Details</button>
-    </div>
-  </div>
-</div>
+      
 
-<div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Tarun mishra</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Detailsw</button>
-    </div>
-  </div>
-</div>
 
-<div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">advait pate</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Details</button>
-    </div>
-  </div>
-</div>
 
-<div className="card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Pooja trivedi</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Details</button>
-    </div>
-  </div>
-</div>
+       
 
-   
-    </div>
-    
-    
-    
+       
+      </div>
     </>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
