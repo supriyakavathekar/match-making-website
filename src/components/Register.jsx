@@ -4,7 +4,7 @@ function Register() {
   return (
     <>
     <div className='registation-container min-h-screen 	 '>
-    <form >
+    <form className='registration-form' >
 <div className='m-12' >
 <center><h1 className='text-2xl '	>Member Registartion Form </h1></center>
 
@@ -57,6 +57,12 @@ function Register() {
 <div  className='mb-4'>
   <label>About Me</label>
 <input type="text" name="aboutMe" placeholder='About me' required/>
+
+</div>
+
+<div  className='mb-4'>
+  <label>Upload Photo</label>
+  <input type="file" className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
 
 </div>
 

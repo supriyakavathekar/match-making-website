@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 
-function Nav({user ,setuser, data}) {
+function Nav({user ,setuser, data, users}) {
 
   const navigate = useNavigate()
 
@@ -12,13 +12,14 @@ function Nav({user ,setuser, data}) {
     // console.log(e.target.password.value);
     const personEmail = e.target.email.value
     const password = e.target.password.value
-    const person = data.users.find(i => i.email == personEmail)
+    const person = users.find(i => i.email == personEmail)
 
     if (person) {
       console.log("person found");
       if (person.password==password) {
         console.log("you can logn");
         setuser(person)
+        window.my_modal_3.close()
        navigate('/profile')
       }else{
         console.log("you can not login");

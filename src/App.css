@@ -133,7 +133,15 @@ font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+ 
+}
+
+.registration-form {
+
+width: 600px;
+border: 1px solid crimson;
+border-radius: 20px;
+
 }
 
 
