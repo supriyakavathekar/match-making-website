@@ -26,9 +26,9 @@ function Contact() {
         }
       };
       return (
-        <div className='min-h-screen '>
+        <div className='min-h-screen contact'>
           <h1>Ping me to get to know eachother better !!!</h1>
-          <form onSubmit={handleSubmit}>
+          <form className='contact-form' onSubmit={handleSubmit}>
             <div className='contactForm'>
               <label className='label' htmlFor='name'>Name:</label>
               <input

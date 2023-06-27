@@ -17,8 +17,13 @@
     color: crimson;
 }
 
+
 .navbar {
     background-color: crimson;
+    color: white;
+
+ 
+
 }
 
 .footer{
@@ -27,7 +32,12 @@
 
 .homePara {
     color: blue;
+    font-family: cursive;
     
+}
+
+.mainText span {
+    color: blue;
 }
 
 /* login page */
@@ -172,6 +182,9 @@ padding: 2%;
 
 .contactForm {
     width: 400px;
+    margin-left: 40%;
+
+    
   }
   .label {
     display: block;
@@ -185,4 +198,17 @@ padding: 2%;
   .actionBtn{
     background-color: crimson;
     color: white;
+    margin-left: 40%;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
   }
+
+  .contact h1{
+  font-size: 30px;
+  text-align: center;
+  }
+
+
+
+

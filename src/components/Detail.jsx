@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
-function Detail({user,setuser, data,users, setselectedUser}) {
+function Detail({user,setuser, data,users, setselectedUser ,selectedUser}) {
 
 
   useEffect(() => {
@@ -14,6 +15,11 @@ function Detail({user,setuser, data,users, setselectedUser}) {
 
   return (
     <div  className='min-h-screen  '>
+
+      {selectedUser&& selectedUser.map((i)=>{
+
+        <p>{i.age}</p>
+      })}
       
       <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
@@ -52,7 +58,8 @@ function Detail({user,setuser, data,users, setselectedUser}) {
 
 
 
-      <button className="btn btn-primary">Lets keep in touch</button>
+      {/* <button className="btn btn-primary">Lets keep in touch</button> */}
+      <Link to={'/contact'}>  <button className="btn btn-primary">Lets keep in touch</button> </Link>
     </div>
   </div>
 </div>

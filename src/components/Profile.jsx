@@ -20,14 +20,14 @@ function Profile({ user, data, users,  }) {
       
         {available && available.map(i => <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure className="w-90 h-72">
-            <img className="max-w-xs" src={i.pics[0]} alt="Shoes" />
+            <img className="max-w-xs" src={i.pics[0]} alt="person" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{i.fullName}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary" onClick={(i)=>{
-                setAvailable(i.id)
+                setAvailable(i)
                 navigate('/detail')
               }} >Details</button>
             </div>
