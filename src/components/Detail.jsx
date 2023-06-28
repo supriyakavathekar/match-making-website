@@ -1,68 +1,71 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
-function Detail({user,setuser, data,users, setselectedUser ,selectedUser}) {
+function Detail({checkPerson, user,setuser, data,users, setselectedUser ,selectedUser}) {
 
 
   useEffect(() => {
     const result = users.filter(i => i.id == user.id)
     setselectedUser(result)
-    // if (!user) {
-    //   navigate("/");
-    console.log(setselectedUser);
-    // }
+   
+  
   }, []);
 
   return (
     <div  className='min-h-screen  '>
 
-      {selectedUser&& selectedUser.map((i)=>{
+    
+      {/* {checkPerson && <div>
+        <p>{checkPerson.fullName}</p>
+         </div>} */}
 
-        <p>{i.age}</p>
-      })}
-      
-      <div className="hero min-h-screen bg-base-200">
+
+
+  {checkPerson && <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
-    <img src="" className="max-w-sm rounded-lg shadow-2xl" />
+    <img src={checkPerson.pics} className="max-w-sm rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-5xl font-bold"></h1>
+      <h1 className="text-5xl font-bold">{checkPerson.fullName}</h1>
 
       <div>
-      <p className="py-6">Age :</p>
+      <p className="py-6">Age : {checkPerson.age}</p>
       </div>
 
       <div>
-      <p className="py-6">City</p>
+      <p className="py-6">City: {checkPerson.city} </p>
       </div>
 
       <div>
-      <p className="py-6">Occupaion</p>
+      <p className="py-6">City: {checkPerson.country} </p>
       </div>
 
       <div>
-      <p className="py-6">Height</p>
+      <p className="py-6">Occupaion: {checkPerson.occupation}</p>
       </div>
 
       <div>
-      <p className="py-6">Religion</p>
+      <p className="py-6">Height: {checkPerson.height}</p>
       </div>
 
       <div>
-      <p className="py-6">nationality</p>
+      <p className="py-6">Religion: {checkPerson.religion}</p>
       </div>
 
       <div>
-      <p className="py-6">About me </p>
+      <p className="py-6">nationality: {checkPerson.nationality}</p>
+      </div>
+
+      <div>
+      <p className="py-6">About me: {checkPerson.about} </p>
       </div>
 
 
 
 
-      {/* <button className="btn btn-primary">Lets keep in touch</button> */}
       <Link to={'/contact'}>  <button className="btn btn-primary">Lets keep in touch</button> </Link>
     </div>
   </div>
-</div>
+</div>}
     </div>
 
 

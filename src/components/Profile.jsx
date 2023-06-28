@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Profile({ user, data, users,  }) {
+function Profile({ user, data, users, setCheckPerson }) {
   const [available, setAvailable] = useState()
   const navigate = useNavigate();
   useEffect(() => {
@@ -15,7 +15,7 @@ function Profile({ user, data, users,  }) {
   return (
     <>
 
-<h1>Welcome to our website </h1>
+<h1 className="profile-heading">Welcome to our website {user.fullName} </h1>
       <div className="min-h-screen lg:flex flex-wrap gap-10">
       
         {available && available.map(i => <div className="card card-compact w-96 bg-base-100 shadow-xl">
@@ -26,8 +26,8 @@ function Profile({ user, data, users,  }) {
             <h2 className="card-title">{i.fullName}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary" onClick={(i)=>{
-                setAvailable(i)
+              <button className="btn btn-primary" onClick={()=>{
+                setCheckPerson(i)
                 navigate('/detail')
               }} >Details</button>
             </div>
