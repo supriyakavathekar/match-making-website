@@ -215,7 +215,7 @@ function Register() {
             <dialog id="my_modal_1" className="modal">
               <form method="dialog" className="modal-box">
                 <h3 className="font-bold text-lg">Hello!</h3>
-                <p className="py-4">Your registration is complelted</p>
+                <p className="py-4">Your registration is completed. Now you can Login</p>
                 <div className="modal-action">
                   {/* if there is a button in form, it will close the modal */}
                   <button type="submit" className="btn registerbtn ">
