@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Match({ users, user, matches, setMatches ,setCheckPerson }) {
   const [matched, setMatched] = useState();
+  const [count, setCount] = useState(0)
 
   console.log("matched",matched);
   function getMatches() {
@@ -12,14 +13,20 @@ function Match({ users, user, matches, setMatches ,setCheckPerson }) {
       matchcesArray = matchcesArray + `&id=${element.to}`
     });
     console.log(matchcesArray);
-    axios(`https://matchmaking-4wh6.onrender.com/users/?${matchcesArray}`).then(i => setMatched(i.data)).catch(i => console.log(i))
+    setTimeout(() => {
+
+      axios(`https://matchmaking-4wh6.onrender.com/users/?${matchcesArray}`).then(i => setMatched(i.data)).catch(i => console.log(i))
+    }, 1500)
   }
 
   function remove(e) {
-    console.log(e);
     const result = matched.filter(i=> i.id != e)
     setMatched(result);
+    axios(`https://matchmaking-4wh6.onrender.com/matches/?from=${user.id}&to=${e}`).then(i => {
+      axios.delete(`https://matchmaking-4wh6.onrender.com/matches/${i.data[0].id}`)
+    }).catch(i => console.log(i))
     console.log(result);
+    setCount(i => i + 1)
 
 
   }
@@ -30,7 +37,7 @@ function Match({ users, user, matches, setMatches ,setCheckPerson }) {
     axios(`https://matchmaking-4wh6.onrender.com/matches/?from=${user.id}`)
       .then((i) => setMatches(i.data))
       .catch((i) => console.log(i));
-  }, []);
+  }, [count]);
   return (
     <div>
       

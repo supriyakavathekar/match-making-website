@@ -15,6 +15,7 @@ function Register() {
         about: e.target.about.value,
         religion: e.target.religion.value,
         city: e.target.city.value,
+        pics: [e.target.photo.value],
   
         email: e.target.email.value,
         password: e.target.password.value,
@@ -161,6 +162,7 @@ function Register() {
             <label>Upload Photo: </label>
             <input
               type="text"
+              name="photo"
               className="file-input file-input-bordered file-input-primary w-full max-w-xs"
             />
           </div>
