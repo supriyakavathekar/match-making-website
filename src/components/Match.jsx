@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 function Match({ users, user, matches, setMatches ,setCheckPerson }) {
   const [matched, setMatched] = useState();
+
+  console.log("matched",matched);
   function getMatches() {
     let matchcesArray = "";
     matches.forEach((element) => {
@@ -11,6 +13,15 @@ function Match({ users, user, matches, setMatches ,setCheckPerson }) {
     });
     console.log(matchcesArray);
     axios(`https://matchmaking-4wh6.onrender.com/users/?${matchcesArray}`).then(i => setMatched(i.data)).catch(i => console.log(i))
+  }
+
+  function remove(e) {
+    console.log(e);
+    const result = matched.filter(i=> i.id != e)
+    setMatched(result);
+    console.log(result);
+
+
   }
 
   const navigate = useNavigate();
@@ -81,7 +92,7 @@ function Match({ users, user, matches, setMatches ,setCheckPerson }) {
                   </th>
 
                   <th>
-                    <button className="btn btn-ghost btn-xs match-btn" >Delete </button>
+                    <button className="btn btn-ghost btn-xs match-btn" onClick={() => remove(i.id)} >Delete </button>
                   </th>
 
 
