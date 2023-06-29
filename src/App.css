@@ -151,7 +151,7 @@ margin-top: 40px;
 .registration-form {
 
 width: 600px;
-background-color: rgb(235, 109, 134);
+background-color: rgb(236, 181, 191);
 
 border-radius: 20px;
 margin-bottom: 100px;
@@ -175,6 +175,14 @@ padding: 2%;
 .match-btn{
     background-color: crimson;
     color: white;
+}
+
+.getmatch{
+    background-color: crimson;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 
@@ -219,3 +227,40 @@ padding: 2%;
     margin-top: 40px;
     color: crimson;
 }
+
+.card-btn{
+    color: white;
+}
+
+
+.card-title{
+    color: crimson;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.card-body{
+    font-family: cursive;
+}
+/* detail */
+
+.detail-container{
+    background-color: rgb(236, 181, 191);
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 5%;
+    border-radius: 30px;
+}
+
+.detail-container h1 {
+    font-family: cursive;
+
+}
+
+.detail-container span{
+    font-size: 20px;
+    padding-right: 10px;
+    color: crimson;
+    font-weight: 800;
+}
+

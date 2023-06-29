@@ -24,9 +24,10 @@ function Profile({ user, data, users, setCheckPerson }) {
           </figure>
           <div className="card-body">
             <h2 className="card-title">{i.fullName}</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Do you think? I am perfect match for you. </p>
+            <p>if Yes, Please click on "details"</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary" onClick={()=>{
+              <button className="btn btn-primary card-btn" onClick={()=>{
                 setCheckPerson(i)
                 navigate('/detail')
               }} >Details</button>

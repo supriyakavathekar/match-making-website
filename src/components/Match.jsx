@@ -1,167 +1,93 @@
-import axios from 'axios'
-import React, { useEffect } from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Match({user, matches, setMatches}) {
+function Match({ users, user, matches, setMatches ,setCheckPerson }) {
+  const [matched, setMatched] = useState();
+  function getMatches() {
+    let matchcesArray = [];
+    matches.forEach((element) => {
+      matchcesArray.push(`&id=${element.to}`);
+    });
+    console.log(matchcesArray.join());
+    axios(`https://matchmaking-4wh6.onrender.com/users/?${matchcesArray.join()}`).then(i => setMatched(i.data)).catch(i => console.log(i))
+  }
+
+  const navigate = useNavigate();
 
   useEffect(() => {
-    axios(`https://matchmaking-4wh6.onrender.com/matches/?from=${user.id}`).then(i => setMatches(i.data)).catch(i => console.log(i))
-  }, [])
+    axios(`https://matchmaking-4wh6.onrender.com/matches/?from=${user.id}`)
+      .then((i) => setMatches(i.data))
+      .catch((i) => console.log(i));
+  }, []);
   return (
     <div>
-      {matches && matches.length}
-    <div className=" min-h-screen  overflow-x-auto">
-<table className="table">
-{/* head */}
-<thead>
-  <tr>
-    <th>
-      <label>
-        <input type="checkbox" className="checkbox" />
-      </label>
-    </th>
-    <th>FullName</th>
-    <th>Occupation</th>
-    <th>Age</th>
-    <th></th>
-  </tr>
-</thead>
-<tbody>
-  {/* row 1 */}
-  <tr>
-    <th>
-      <label>
-        <input type="checkbox" className="checkbox" />
-      </label>
-    </th>
-    <td>
-      <div className="flex items-center space-x-3">
-        <div className="avatar">
-          <div className="mask mask-squircle w-12 h-12">
-            <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
-          </div>
-        </div>
-        <div>
-          <div className="font-bold">Hart Hagerty</div>
-          <div className="text-sm opacity-50">United States</div>
-        </div>
-      </div>
-    </td>
-    <td>
-      Zemlak, Daniel and Leannon
-      <br/>
-      <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-    </td>
-    <td>29</td>
-    <th>
-      <button className="btn btn-ghost btn-xs match-btn">details</button>
-    </th>
-  </tr>
-  {/* row 2 */}
-  <tr>
-    <th>
-      <label>
-        <input type="checkbox" className="checkbox" />
-      </label>
-    </th>
-    <td>
-      <div className="flex items-center space-x-3">
-        <div className="avatar">
-          <div className="mask mask-squircle w-12 h-12">
-            <img src="/tailwind-css-component-profile-3@56w.png" alt="Avatar Tailwind CSS Component" />
-          </div>
-        </div>
-        <div>
-          <div className="font-bold">Brice Swyre</div>
-          <div className="text-sm opacity-50">China</div>
-        </div>
-      </div>
-    </td>
-    <td>
-      Carroll Group
-      <br/>
-      <span className="badge badge-ghost badge-sm">Tax Accountant</span>
-    </td>
-    <td>31</td>
-    <th>
-      <button className="btn btn-ghost btn-xs match-btn">details</button>
-    </th>
-  </tr>
-  {/* row 3 */}
-  <tr>
-    <th>
-      <label>
-        <input type="checkbox" className="checkbox" />
-      </label>
-    </th>
-    <td>
-      <div className="flex items-center space-x-3">
-        <div className="avatar">
-          <div className="mask mask-squircle w-12 h-12">
-            <img src="/tailwind-css-component-profile-4@56w.png" alt="Avatar Tailwind CSS Component" />
-          </div>
-        </div>
-        <div>
-          <div className="font-bold">Marjy Ferencz</div>
-          <div className="text-sm opacity-50">Russia</div>
-        </div>
-      </div>
-    </td>
-    <td>
-      Rowe-Schoen
-      <br/>
-      <span className="badge badge-ghost badge-sm">Office Assistant I</span>
-    </td>
-    <td>29</td>
-    <th>
-      <button className="btn btn-ghost btn-xs match-btn">details</button>
-    </th>
-  </tr>
-  {/* row 4 */}
-  <tr>
-    <th>
-      <label>
-        <input type="checkbox" className="checkbox" />
-      </label>
-    </th>
-    <td>
-      <div className="flex items-center space-x-3">
-        <div className="avatar">
-          <div className="mask mask-squircle w-12 h-12">
-            <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component" />
-          </div>
-        </div>
-        <div>
-          <div className="font-bold">Yancy Tear</div>
-          <div className="text-sm opacity-50">Brazil</div>
-        </div>
-      </div>
-    </td>
-    <td>
-      Wyman-Ledner
-      <br/>
-      <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
-    </td>
-    <td>34</td>
-    <th>
-      <button className="btn btn-ghost btn-xs match-btn">details</button>
-    </th>
-  </tr>
-</tbody>
-{/* foot */}
-{/* <tfoot>
-  <tr>
-    <th></th>
-    <th>Name</th>
-    <th>Job</th>
-    <th>Favorite Color</th>
-    <th></th>
-  </tr>
-</tfoot> */}
+      
+      {/* {matched && matched.length} */}
+      <div className=" min-h-screen  overflow-x-auto">
 
-</table>
-</div>
-</div>
-  )
+      <button  className="btn btn-ghost btn-xs getmatch" onClick={getMatches}>Your Matches</button>
+
+        <table className="table">
+          {/* head */}
+          <thead>
+            <tr>
+              <th>
+             
+              </th>
+              <th>FullName</th>
+              <th>Occupation</th>
+              <th>Age</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            {matched &&
+              matched.map((i) => (
+                <tr>
+                  <th>
+                 
+                  </th>
+                  <td>
+                    <div className="flex items-center space-x-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle w-12 h-12">
+                          <img
+                            src={i.pics}
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold"></div>
+                        <div className="text-sm opacity-50"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    {i.fullName}
+                    <br />
+                    <span className="badge badge-ghost badge-sm">
+                     {i.occupation}
+                    </span>
+                  </td>
+                  <td>{i.age}</td>
+                  <th>
+                    <button className="btn btn-ghost btn-xs match-btn"onClick={()=>{
+                setCheckPerson(i)
+                navigate('/detail')
+              }} >Details</button>
+                  </th>
+                </tr>
+              ))}
+           
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  );
 }
 
-export default Match
+export default Match;
