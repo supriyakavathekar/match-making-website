@@ -8,7 +8,12 @@ function Register() {
     axios.post("https://matchmaking-4wh6.onrender.com/users", {
       fullName: e.target.name.value,
       email: e.target.email.value,
-
+      age: e.target.age.value,
+      height: e.target.height.value,
+      religion: e.target.religion.value,
+      country: e.target.country.value,
+      city: e.target.city.value,
+      about: e.target.about.value
 
     }).then(i => console.log(i.data)).catch(i => console.log(i))
   }
@@ -50,12 +55,33 @@ function Register() {
               type="date"
               className="input input-bordered input-primary w-full max-w-xs"
             />
+
+<div className="mb-4">
+            <label>Age: </label>
+            <input
+            name="age"
+              type="text"
+              placeholder="Type Your Age"
+              className="input input-bordered input-primary w-full max-w-xs"
+            />
+          </div>
+<div className="mb-4">
+
+          <select name="gender" className="select select-secondary w-full max-w-xs">
+  <option disabled selected>Pick your gender</option>
+  <option>male</option>
+  <option>female</option>
+</select>
+</div>
+
             <div className="mb-4">
               <label> Gender: </label> <br />
+
               <label htmlFor="Male">
                 <input type="radio" name="Male" />
                 Male
               </label>
+
               <label htmlFor="Female">
                 <input type="radio" name="Female" />
                 Female
@@ -67,6 +93,7 @@ function Register() {
             <label>Height in cm: </label>
             <input
               type="number"
+              name="height"
               placeholder="Height"
               className="input input-bordered input-primary w-full max-w-xs"
             />
@@ -77,6 +104,7 @@ function Register() {
             <input
               type="text"
               placeholder="Religion"
+              name="religion"
               className="input input-bordered input-primary w-full max-w-xs"
             />
           </div>
@@ -86,6 +114,7 @@ function Register() {
             <input
               type="text"
               placeholder="Country"
+              name="country"
               className="input input-bordered input-primary w-full max-w-xs"
             />
           </div>
@@ -95,6 +124,26 @@ function Register() {
             <input
               type="text"
               placeholder="City"
+              name="city"
+              className="input input-bordered input-primary w-full max-w-xs"
+            />
+          </div>
+          <div className="mb-4">
+            <label>Nationality: </label>
+            <input
+              type="text"
+              placeholder="Nationality"
+              name="nationality"
+              className="input input-bordered input-primary w-full max-w-xs"
+            />
+          </div>
+
+          <div className="mb-4">
+            <label>Occupation: </label>
+            <input
+              type="text"
+              placeholder="Occupation"
+              name="occupatioin"
               className="input input-bordered input-primary w-full max-w-xs"
             />
           </div>
@@ -104,13 +153,14 @@ function Register() {
             <textarea
               className="textarea textarea-error"
               placeholder="About Me"
+              name="about"
             ></textarea>
           </div>
 
           <div className="mb-4">
             <label>Upload Photo: </label>
             <input
-              type="file"
+              type="text"
               className="file-input file-input-bordered file-input-primary w-full max-w-xs"
             />
           </div>
@@ -118,7 +168,7 @@ function Register() {
           <div className="mb-4">
             <label>Upload Identity Card: </label>
             <input
-              type="file"
+              type="text"
               className="file-input file-input-bordered file-input-primary w-full max-w-xs"
             />
           </div>
@@ -129,6 +179,7 @@ function Register() {
             </label>
             <input
               type="password"
+              name="password"
               placeholder="Type Password"
               className="input input-bordered input-primary w-full max-w-xs"
             />{" "}
@@ -147,9 +198,23 @@ function Register() {
             />
           </div>
           <div className="mb-4">
-            <button type="submit" className="registerbtn">
+            {/* <button type="submit" className="registerbtn">
               Registration
-            </button>
+            </button> */}
+
+
+            
+<button className="btn" onClick={()=>window.my_modal_1.showModal()}>Registartion</button>
+<dialog id="my_modal_1" className="modal">
+  <form method="dialog" className="modal-box">
+    <h3 className="font-bold text-lg">Hello!</h3>
+    <p className="py-4">Your registration is complelted</p>
+    <div className="modal-action">
+      {/* if there is a button in form, it will close the modal */}
+      <button type="submit" className="btn registerbtn ">Close</button>
+    </div>
+  </form>
+</dialog>
           </div>
         </form>
       </div>

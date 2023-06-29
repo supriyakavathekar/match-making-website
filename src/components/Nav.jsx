@@ -92,7 +92,7 @@ function Nav({user ,setuser, data, users, setMatches}) {
        <button className='loginBtn' type='submit'>Login</button>
        <p className='register'>Not Joined Perfect Pair Co. yet? </p>
        {/* <a  className='register'>Register now free of charge</a> */}
-       <Link to='/register' className='register' >  <button className='btn btn-primary register-btn'>Register now free of charge</button> </Link>
+       <Link to='/register' className='register' onClick={() => window.my_modal_3.close()} >  <button className='btn btn-primary register-btn'>Register now free of charge</button> </Link>
        
        
        

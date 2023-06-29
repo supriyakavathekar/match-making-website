@@ -40,7 +40,7 @@ const [users, setUsers] = useState()
     <Route path='/' element={<Home/>} />
     <Route path='/profile' element={<Profile setCheckPerson={setCheckPerson} user={user} users={users} data={data} setselectedUser={setselectedUser} />}/>
     <Route path='/register' element={<Register/>} />
-    <Route path='/match' element={<Match users={users} setMatches={setMatches} matches={matches} user={user}/>} />
+    <Route path='/match' element={<Match users={users} setMatches={setMatches} matches={matches} user={user} setCheckPerson={setCheckPerson}/>} />
     <Route path='/detail' element={<Detail checkPerson={checkPerson} user={user} setuser={setuser} data={data} users={users} setselectedUser={setselectedUser}/>}/>
     <Route path='/contact' element={<Contact/>} />
     <Route path='/stories' element={<Stories/>} />

@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -14,6 +15,13 @@ function Detail({
     const result = users.filter((i) => i.id == user.id);
     setselectedUser(result);
   }, []);
+
+  function addMatch () {
+    axios.post(`https://matchmaking-4wh6.onrender.com/matches`, {
+      from: user.id,
+      to: checkPerson.id
+    }).then(i => console.log(i.data)).catch(i => console.log(i))
+  }
 
   return (
     <div className="min-h-screen">
@@ -64,6 +72,7 @@ function Detail({
 
 
               <Link to={'/contact'}>  <button className="btn btn-primary">Lets keep in touch</button> </Link>
+              <button onClick={addMatch}>Match</button>
 
             </div>
           </div>

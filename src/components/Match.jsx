@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 function Match({ users, user, matches, setMatches ,setCheckPerson }) {
   const [matched, setMatched] = useState();
   function getMatches() {
-    let matchcesArray = [];
+    let matchcesArray = "";
     matches.forEach((element) => {
-      matchcesArray.push(`&id=${element.to}`);
+      matchcesArray = matchcesArray + `&id=${element.to}`
     });
-    console.log(matchcesArray.join());
-    axios(`https://matchmaking-4wh6.onrender.com/users/?${matchcesArray.join()}`).then(i => setMatched(i.data)).catch(i => console.log(i))
+    console.log(matchcesArray);
+    axios(`https://matchmaking-4wh6.onrender.com/users/?${matchcesArray}`).then(i => setMatched(i.data)).catch(i => console.log(i))
   }
 
   const navigate = useNavigate();
