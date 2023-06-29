@@ -72,7 +72,7 @@ function Detail({
 
 
               <Link to={'/contact'}>  <button className="btn btn-primary">Lets keep in touch</button> </Link>
-              <button onClick={addMatch}>Match</button>
+              <button className="btn btn-primary" onClick={addMatch}>Match</button>
 
             </div>
           </div>

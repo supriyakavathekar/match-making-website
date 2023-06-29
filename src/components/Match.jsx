@@ -79,6 +79,12 @@ function Match({ users, user, matches, setMatches ,setCheckPerson }) {
                 navigate('/detail')
               }} >Details</button>
                   </th>
+
+                  <th>
+                    <button className="btn btn-ghost btn-xs match-btn" >Delete </button>
+                  </th>
+
+
                 </tr>
               ))}
            
